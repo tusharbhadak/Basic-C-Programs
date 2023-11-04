@@ -1,0 +1,64 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+int a[2][2], b[2][3], i,j;
+clrscr();
+
+//Matrix A
+printf("Enter the Elements in Matrix A: \n");
+for(i=0; i<2; i++){
+for(j=0;j<2;j++){
+printf("Enter a[%d][%d]: ", i,j);
+scanf("%d", &a[i][j]);
+}
+}
+
+//Printing Matrix A
+printf("Matrix A: \n");
+for(i=0;i<2;i++)
+{
+printf("\n");
+for(j=0;j<2;j++)
+{
+printf("%d \t", a[i][j]);
+}
+}
+
+//Matrix B
+printf("Enter the Elements in Matrix B: \n");
+for(i=0; i<2; i++){
+for(j=0;j<3;j++){
+printf("Enter b[%d][%d]: ", i,j);
+scanf("%d", &b[i][j]);
+}
+}
+
+//Printing Matrix B
+printf("Matrix B: \n");
+for(i=0;i<2;i++)
+{
+printf("\n");
+for(j=0;j<3;j++)
+{
+printf("%d \t", b[i][j]);
+}
+}
+
+
+//Printing Transpose of Matrix B
+printf("Transpose of Matrix B \n");
+for(i=0;i<3;i++)
+{
+printf("\n");
+for(j=0;j<2;j++)
+{
+printf("%d \t", b[j][i]);
+}
+}
+
+getch();
+
+return 0;
+}

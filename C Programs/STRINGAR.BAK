@@ -1,0 +1,8 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+char msg[6] = {'H','e','l','l','o','\0'};
+printf("Message: %s \n", msg);
+return 0;
+}

@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+
+struct health
+{
+int age;
+int height;
+};
+int main()
+{
+clrscr();
+struct health h1 ={23,6};
+printf("%d \n",h1.height);
+getch();
+return 0;
+}

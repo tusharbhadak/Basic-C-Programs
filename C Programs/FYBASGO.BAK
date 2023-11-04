@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main()
+{
+   float a = 10;
+   float b = 2.5;
+   clrscr();
+   printf("%d", a == b || a>b && a != b);
+   getch();
+   return 0;
+}
